@@ -1,0 +1,276 @@
+#mainHero {
+    width: 100%;
+    height: 730px;
+
+}
+
+/*------------------------------------------------------------NAVBAR-------------------------------------------------------------------*/
+
+#navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-wrapper {
+    width: 8%;
+}
+
+#logo-wrapper img {
+    width: 100%;
+}
+
+#rightNavbar {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+#rightNavbar a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 540;
+    transition: 0.4s;
+
+    font-size: 1.1rem;
+
+}
+
+#rightNavbar p {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 540;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.4s;
+
+
+}
+
+#rightNavbar a:hover {
+    color: blue;
+    transition: 0.4s;
+}
+
+#rightNavbar p:hover {
+    color: blue;
+    transition: 0.4s;
+}
+
+
+
+
+#menuBtn {
+    color: black;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#heroPicWrapper {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+#heroPicWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(40%);
+}
+
+#middleOfHero {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 22%;
+}
+
+#leftMiddle {
+    width: 40%;
+}
+
+#leftMiddle h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+#leftMiddle p {
+    color: white;
+}
+
+
+#middleCta {
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 40px;
+}
+
+
+#rightMiddle {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#rightMiddle a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.line {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+    #rightMiddle {
+        visibility: hidden;
+    }
+
+    #leftMiddle {
+        width: 50%;
+    }
+
+}
+
+@media(max-width:900px) {
+    #rightMiddle {
+        width: 1%;
+    }
+
+    #leftMiddle {
+        width: 60%;
+    }
+
+    #leftMiddle h1 {
+        font-size: 2.7rem;
+    }
+
+}
+
+@media(max-width:800px) {
+
+    #navbar {
+        justify-content: space-between;
+        z-index: 10;
+    }
+
+    #leftMiddle h1 {
+        font-size: 2.7rem;
+    }
+
+    #leftMiddle {
+        width: 90%;
+    }
+
+    #rightNavbar {
+        position: fixed;
+        width: 100%;
+        min-height: 200px;
+        background-color: white;
+        top: -340px;
+        border-top: 1px solid black;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        flex-direction: column;
+        z-index: 9;
+        transition: 0.6s;
+
+    }
+
+
+
+    #menuBtn {
+        display: block;
+        margin-right: 20px;
+
+    }
+
+    #middleOfHero {
+        top: 29%;
+    }
+
+    #rightNavbar.navbarOpen {
+        top: 80px;
+        transition: 0.6s;
+    }
+
+
+
+}
+
+@media(max-width:600px) {
+    #leftMiddle h1 {
+        font-size: 2.3rem;
+    }
+
+    #logo-wrapper {
+        width: 12%;
+    }
+}
+
+@media(max-width:400px) {
+    #leftMiddle h1 {
+        font-size: 1.8rem;
+    }
+
+    #logo-wrapper {
+        width: 13%;
+    }
+}
+
+@media(max-width:350px) {
+    #leftMiddle h1 {
+        font-size: 1.7rem;
+    }
+
+    #logo-wrapper {
+        width: 13%;
+    }
+}
