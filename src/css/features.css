@@ -1,4 +1,4 @@
-#mainServices {
+#mainFeatures {
     width: 100%;
     min-height: 400px;
     display: flex;
@@ -26,10 +26,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#ctaServices {
-    width: 180px;
-    height: 45px;
-}
+
 
 
 

@@ -1,0 +1,106 @@
+#mainFooter {
+    width: 100%;
+    background-color: #005BAA;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    width: 90%;
+
+}
+
+
+#topFooter {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#foooterLogo {
+    width: 10%;
+}
+
+#foooterLogo img {
+    width: 100%;
+}
+
+#topFooter h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#endpointsFooter {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    gap: 20px;
+}
+
+#endpointsFooter a {
+    color: white;
+    text-decoration: none;
+}
+
+#contactThings {
+    display: flex;
+    color: white;
+    gap: 40px;
+}
+
+
+
+
+
+
+#bootomFooter {
+    width: 100%;
+    border-top: 2px solid white;
+}
+
+#bootomFooter p {
+    color: white;
+
+}
+
+
+@media(max-width:800px) {
+    #mainFooter {
+        min-height: 360px;
+    }
+
+    #foooterLogo {
+        width: 20%;
+    }
+}
+
+
+@media(max-width:500px) {
+    #mainFooter {
+        min-height: 330px;
+    }
+
+    #topFooter h2 {
+        font-size: 1.2rem;
+    }
+
+    #endpointsFooter {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width:400px) {
+
+    #foooterLogo {
+        width: 25%;
+    }
+
+
+
+}

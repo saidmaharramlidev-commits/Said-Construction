@@ -7,7 +7,9 @@ import { useEffect } from 'react'
 import Lenis from "lenis"
 import "./css/services.css"
 import "./css/animation.css"
-
+import "./css/blog.css"
+import "./css/companies.css"
+import "./css/footer.css"
 
 function App() {
 
