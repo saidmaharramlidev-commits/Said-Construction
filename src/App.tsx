@@ -5,13 +5,15 @@ import "./css/hero.css"
 import "./css/middle.css"
 import { useEffect } from 'react'
 import Lenis from "lenis"
+import "./css/services.css"
+import "./css/animation.css"
 
 
 function App() {
 
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.3,
+      duration: 1,
     });
 
     function raf(time: number) {

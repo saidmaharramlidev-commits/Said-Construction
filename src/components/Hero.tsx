@@ -40,7 +40,7 @@ function Hero() {
                     <img src={HeroLogo} alt="" />
                 </div>
                 <div id="rightNavbar" className={isNavbarOpen ? "navbarOpen" : ""}>
-                    <a href="/">Home</a>
+                    <a href="/" onClick={() => navigate("/")}>Home</a>
                     <p
                         id="aboutBtn"
                         onClick={handleOpen}
