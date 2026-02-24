@@ -1,0 +1,194 @@
+#mainAbout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heroOfAbout {
+    width: 100%;
+    height: 200px;
+    position: relative;
+
+
+}
+
+#heroOfAbout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+#infoOfHero {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    text-align: center;
+    transform: translate(50%, 50%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+#infoHorizontalDivs {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.infoHorizontalDiv {
+    width: 22%;
+    min-height: 300px;
+    border-radius: 10px;
+    background-color: #DEF1FA;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+.infoHorizontalDiv p {
+    line-height: 25px;
+}
+
+.infoHorizontalDiv h1 {
+    font-weight: 400;
+}
+
+
+
+
+
+
+#statistic {
+    text-align: center;
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+#statistic h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #005BAA;
+}
+
+
+#statistic img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#numbers {
+    width: 75%;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    margin-top: -100px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.number h2 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+    #infoHorizontalDivs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .infoHorizontalDiv {
+        width: 100%;
+        min-height: 100px;
+        border-radius: 20px;
+        padding: 0;
+    }
+
+    .infoHorizontalDiv h1 {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+@media(max-width:800px) {
+
+    #statistic h1 {
+        font-size: 1.5rem;
+    }
+
+    #numbers {
+        width: 80%;
+    }
+
+}
+
+@media(max-width:700px) {
+    .number h2 {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media(max-width:500px) {
+    #statistic img {
+        height: 250px;
+    }
+
+    #numbers {
+        margin-top: -60px;
+        height: 150px;
+        width: 90%;
+        gap: 15px;
+    }
+}
+
+
+@media(max-width:500px) {
+    #statistic img {
+        height: 200px;
+    }
+}

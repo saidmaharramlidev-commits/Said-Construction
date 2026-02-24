@@ -1,0 +1,171 @@
+#mainContact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containerContact {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#location {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+
+}
+
+#leftLocation {
+    width: 35%;
+}
+
+#leftLocation h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#rightLocation {
+    width: 64%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contactForm {
+    margin-top: 50px;
+    width: 60%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 60px;
+
+}
+
+
+
+#contactForm h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: flex-start;
+    padding-left: 10px;
+}
+
+
+#fields {
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.field {
+    width: 44%;
+}
+
+
+#message-wrapper {
+    width: 81%;
+}
+
+#message {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+    #location {
+        flex-direction: column;
+        height: 700px;
+    }
+
+    #leftLocation {
+        width: 70%;
+    }
+
+    #rightLocation {
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+@media(max-width:1000px) {
+    #location {
+        height: 600px;
+    }
+}
+
+
+@media(max-width:800px) {
+    #contactForm {
+        width: 80%;
+    }
+}
+
+@media(max-width:700px) {
+    #location {
+        height: 500px;
+    }
+}
+
+@media(max-width:600px) {
+    #contactForm {
+        width: 95%;
+    }
+}

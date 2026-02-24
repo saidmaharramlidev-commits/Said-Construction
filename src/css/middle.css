@@ -192,11 +192,16 @@
     }
 
     #middle-pic-wrapper {
-        height: 450px;
+        height: 250px;
+        margin-bottom: 150px;
+    }
+
+    #infoMiddle-wrapper {
+        min-height: 600px;
     }
 
     #infoMiddle {
-        bottom: -100px;
+        bottom: 0;
     }
 
     #infoMiddle h3 {
@@ -214,7 +219,7 @@
     }
 
     #infoMiddle {
-        bottom: -170px;
+        bottom: 0;
     }
 
     #infoMiddle h3 {
@@ -233,9 +238,7 @@
         font-size: 2rem;
     }
 
-    #container {
-        gap: 5px;
-    }
+
 
 
 
@@ -244,7 +247,7 @@
     }
 
     #infoMiddle {
-        bottom: -170px;
+        bottom: 0;
     }
 
     #infoMiddle h3 {

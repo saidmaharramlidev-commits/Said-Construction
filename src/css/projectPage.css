@@ -1,0 +1,12 @@
+#mainProjectPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#containerProjects {
+    width: 90%;
+    margin-top: 50px;
+}

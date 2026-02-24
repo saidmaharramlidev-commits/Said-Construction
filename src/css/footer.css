@@ -102,5 +102,11 @@
     }
 
 
+    #endpointsFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 
 }

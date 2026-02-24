@@ -1,89 +1,22 @@
 import HeroPic from "../assets/heroConstruction.jpg"
-import HeroLogo from '../assets/heroLogo.jpg'
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import { useState } from "react";
 
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Button } from "@mui/material";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { FaGripLinesVertical } from "react-icons/fa";
-import MenuIcon from '@mui/icons-material/Menu';
-import { useDispatch, useSelector } from "react-redux";
-import { setNavbar } from "../redux/counterSlice";
-import type { RootState } from "../redux/store";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 function Hero() {
 
-    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-    const handleOpen = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
 
-
-    const dispatch = useDispatch()
-    const { isNavbarOpen } = useSelector((state: RootState) => state.counter)
     const navigate = useNavigate()
 
 
     return (
         <div id="mainHero">
-            <div id="navbar">
-                <div id="logo-wrapper">
-                    <img src={HeroLogo} alt="" />
-                </div>
-                <div id="rightNavbar" className={isNavbarOpen ? "navbarOpen" : ""}>
-                    <a href="/" onClick={() => navigate("/")}>Home</a>
-                    <p
-                        id="aboutBtn"
-                        onClick={handleOpen}
-                        style={{ cursor: "pointer" }}
-                    >
-                        About {anchorEl ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
-                    </p>
-
-                    <Menu
-                        anchorEl={anchorEl}
-                        open={Boolean(anchorEl)}
-                        onClose={handleClose}
-                        anchorOrigin={{
-                            vertical: "bottom",
-                            horizontal: "center",
-                        }}
-                        transformOrigin={{
-                            vertical: "top",
-                            horizontal: "center",
-                        }}
-
-                    >
-                        <MenuItem onClick={() => {
-                            navigate("/about")
-                            handleClose()
-                        }}>History and Goals</MenuItem>
-                        <MenuItem onClick={() => {
-                            navigate("/about/leader")
-                            handleClose()
-                        }}>Founder of Company</MenuItem>
-                    </Menu>
-
-                    <a href="">Services</a>
-                    <a href="">Projects</a>
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
-                </div>
-                <div id="menuBtn" onClick={() => dispatch(setNavbar())} >
-                    <MenuIcon />
-                </div>
-
-
-            </div>
+            <Navbar />
             <div id="heroPicWrapper">
                 <img src={HeroPic} alt="" />
                 <div id="middleOfHero">
