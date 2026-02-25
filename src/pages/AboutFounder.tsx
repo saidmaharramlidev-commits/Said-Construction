@@ -1,6 +1,5 @@
 import AboutHero from "../AboutComps/AboutHero"
 import Navbar from "../components/Navbar"
-import HeroPic from "../assets/aboutHeroSec.jpg"
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
@@ -63,7 +62,7 @@ function AboutFounder() {
     return (
         <div id="mainAboutFounder">
             <Navbar />
-            <AboutHero header="Founder of Company" url="Home > About > Leader" pic={HeroPic} />
+            <AboutHero header="Founder of Company" url="Home > About > Leader" />
 
 
             <div id="containerOfFounder">

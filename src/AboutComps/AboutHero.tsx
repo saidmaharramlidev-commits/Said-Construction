@@ -1,13 +1,12 @@
-
+import pic from "../assets/aboutHeroSec.jpg"
 
 export interface heroProps {
     header: string,
     url: string,
-    pic: string
 }
 
 
-function AboutHero({ header, url, pic }: heroProps) {
+function AboutHero({ header, url }: heroProps) {
     return (
         <div id="mainAbout">
             <div id="heroOfAbout">

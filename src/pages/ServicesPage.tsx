@@ -1,6 +1,5 @@
 import AboutHero from "../AboutComps/AboutHero"
 import Navbar from "../components/Navbar"
-import ServicesPic from "../assets/aboutHeroSec.jpg"
 import { useState } from "react";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -71,7 +70,7 @@ function ServicesPage() {
   return (
     <div id="servicesPage">
       <Navbar />
-      <AboutHero header="Services" url="Home > Services" pic={ServicesPic} />
+      <AboutHero header="Services" url="Home > Services" />
 
 
 
@@ -155,16 +154,24 @@ function ServicesPage() {
 
           <CustomTabPanel value={value} index={1}>
             <div className="services">
-              <div className="service"></div>
-              <div className="service"></div>
-              <div className="service"></div>
-              <div className="service"></div>
-              <div className="service"></div>
-              <div className="service"></div>
-              <div className="service"></div>
-              <div className="service"></div>
-              <div className="service"></div>
-              <div className="service"></div>
+              <div className="service">
+                <h3>Demolition</h3>
+                <p>
+                  We provide architectural and master plan solutions for aesthetic, functional and environmentally friendly projects.</p>
+              </div>
+              <div className="service">
+                <h3>Excavation and Piling</h3>
+                <p>
+
+                  We provide precise excavation and reliable piling services for durable foundations.</p>
+              </div>
+              <div className="service">
+                <h3>Electricity-Lighting</h3>
+                <p>
+
+                  We provide perfect lighting with safe and efficient electrical and lighting systems.</p>
+              </div>
+
             </div>
           </CustomTabPanel>
 

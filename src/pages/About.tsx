@@ -9,7 +9,7 @@ function About() {
     return (
         <div id="mainAbout">
             <Navbar />
-            <AboutHero header="About" url="Home > About" pic={HeroPic} />
+            <AboutHero header="About" url="Home > About" />
             <Middle />
 
 

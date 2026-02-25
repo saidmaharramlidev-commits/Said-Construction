@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom"
 import Logo from "../assets/heroLogo.jpg"
 
 
@@ -5,6 +6,12 @@ import Logo from "../assets/heroLogo.jpg"
 
 
 function Footer() {
+
+    const navigate = useNavigate()
+
+
+
+
     return (
         <div id="mainFooter">
             <div id="container">
@@ -14,13 +21,12 @@ function Footer() {
                     </div>
                     <h2>Strong Foundations, High Goals!</h2>
                     <div id="endpointsFooter">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Services</a>
-                        <a href="">Projects</a>
-                        <a href="">Partners</a>
-                        <a href="">Blog</a>
-                        <a href="">Contact</a>
+                        <a href="/">Home</a>
+                        <a href="/">About</a>
+                        <a href="" onClick={() => navigate('/services')}>Services</a>
+                        <a href="" onClick={() => navigate('/projects')}>Projects</a>
+                        <a href="" onClick={() => navigate('/blogs')}>Blog</a>
+                        <a href="" onClick={() => navigate('/contact')}>Contact</a>
                     </div>
                     <div id="contactThings">
                         <p>Somewhere in world</p>

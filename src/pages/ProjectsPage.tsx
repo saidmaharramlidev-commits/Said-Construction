@@ -1,6 +1,5 @@
 import AboutHero from "../AboutComps/AboutHero"
 import Navbar from "../components/Navbar"
-import Pic from "../assets/aboutHeroSec.jpg"
 
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -81,7 +80,7 @@ function ProjectsPage() {
     return (
         <div id="mainProjectPage">
             <Navbar />
-            <AboutHero header="Projects" url="Home > Projects" pic={Pic} />
+            <AboutHero header="Projects" url="Home > Projects" />
 
 
             <div id="containerProjects">

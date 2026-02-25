@@ -1,6 +1,6 @@
 import AboutHero from "../AboutComps/AboutHero"
 import Navbar from "../components/Navbar"
-import Pic from "../assets/aboutHeroSec.jpg"
+
 
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -12,7 +12,7 @@ function Contact() {
     return (
         <div id="mainContact">
             <Navbar />
-            <AboutHero header="Contact" url="Home > Contact" pic={Pic} />
+            <AboutHero header="Contact" url="Home > Contact" />
 
             <div id="containerContact">
                 <div id="location">

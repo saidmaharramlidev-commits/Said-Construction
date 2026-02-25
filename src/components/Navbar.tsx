@@ -33,7 +33,10 @@ function Navbar() {
                 <img src={HeroLogo} alt="" />
             </div>
             <div id="rightNavbar" className={isNavbarOpen ? "navbarOpen" : ""}>
-                <a href="/" onClick={() => navigate("/")}>Home</a>
+                <a href="/" onClick={() => {
+                    navigate("/")
+                    dispatch(setNavbar())
+                }}>Home</a>
                 <p
                     id="aboutBtn"
                     onClick={handleOpen}
@@ -68,7 +71,7 @@ function Navbar() {
 
                 <a href="" onClick={() => navigate("/services")}>Services</a>
                 <a href="" onClick={() => navigate("/projects")}>Projects</a>
-                <a href="">Blog</a>
+                <a href="" onClick={() => navigate("/blogs")}>Blog</a>
                 <a href="" onClick={() => navigate("/contact")}>Contact</a>
             </div>
             <div id="menuBtn" onClick={() => dispatch(setNavbar())} >
