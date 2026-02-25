@@ -8,7 +8,7 @@ export interface heroProps {
 
 function AboutHero({ header, url }: heroProps) {
     return (
-        <div id="mainAbout">
+        <div id="mainAboutHero">
             <div id="heroOfAbout">
                 <img src={pic} alt="" />
                 <div id="infoOfHero">
